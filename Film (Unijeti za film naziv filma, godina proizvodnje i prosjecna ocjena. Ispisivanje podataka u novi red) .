@@ -1,0 +1,17 @@
+def unesi_podatke_filma():
+	naziv = input("Unesite naziv filma: ")
+	godina_proizvodnje = input("Unesite godinu proizvodnje filma: ")
+	prosjecna_ocjena = input("Unesite prosjecnu ocjenu: ")
+
+	return naziv, godina_proizvodnje, prosjecna_ocjena
+
+def main():
+    naziv_filma, godina_proizvodnje_filma, prosjecna_ocjena_filma = unesi_podatke_filma()
+
+# Ispisivanje podataka u novom redu
+    print("Naziv filma: ", naziv_filma)
+    print("Godina proizvodnje filma: ", godina_proizvodnje_filma)
+    print("Prosjecna ocjena: ", prosjecna_ocjena_filma)
+
+if __name__ == '__main__':
+    main() 
