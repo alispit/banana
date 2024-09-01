@@ -1,0 +1,15 @@
+def unesi_podatke_filma():
+    naziv_filma = input("Unesite naziv filma: ")
+    ocjena_filma = input("Unesite ocjenu filma: ")
+
+    return naziv_filma, ocjena_filma
+
+def main():
+    naziv, ocjena = unesi_podatke_filma()
+
+    # Ispisivanje podataka u novom redu
+    print("Naziv filma: ", naziv)
+    print("Ocjena filma: ", ocjena)
+
+if __name__ == '__main__':
+    main() 
