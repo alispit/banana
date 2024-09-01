@@ -1,0 +1,17 @@
+def unesi_podatke_osobe():
+    ime = input("Unesite ime osobe: ")
+    prezime = input("Unesite prezime osobe: ")
+    godine = input("Unesite godine osobe: ")
+
+    return ime, prezime, godine
+
+def main():
+    ime_osobe, prezime_osobe, godine_osobe = unesi_podatke_osobe()
+
+    # Ispisivanje podataka u novom redu
+    print("Ime osobe: ", ime_osobe)
+    print("Prezime osobe: ", prezime_osobe)
+    print("Godine osobe: ", godine_osobe)
+
+if __name__ == '__main__':
+    main() 
