@@ -1,0 +1,24 @@
+Funkcija unesi_lozinku():
+    Ispisi "Unesite lozinku: "
+    Unesi lozinka
+    Vrati lozinka
+
+Funkcija unesi_potvrdu_lozinke():
+    Ispisi "Potvrdite lozinku: "
+    Unesi potvrda_lozinke
+    Vrati potvrda_lozinke
+
+Funkcija provjeri_lozinke(lozinka, potvrda_lozinke):
+    Ako lozinka == potvrda_lozinke:
+        Vrati True
+    Inace:
+        Vrati False
+
+Glavna funkcija():
+    lozinka = unesi_lozinku()
+    potvrda_lozinke = unesi_potvrdu_lozinke()
+
+    Ako provjeri_lozinke(lozinka, potvrda_lozinke):
+        Ispisi "Lozinka je ispravna. Prihvaceno."
+    Inace:
+        Ispisi "Lozinke se ne podudaraju. Pokusajte ponovo." 
