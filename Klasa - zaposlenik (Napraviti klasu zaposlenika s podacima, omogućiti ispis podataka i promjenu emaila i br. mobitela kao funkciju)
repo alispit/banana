@@ -1,0 +1,41 @@
+class Zaposlenik:
+    def __init__ (self, ime, prezime, email, broj_mobitela):
+        self.ime = ime
+        self.prezime = prezime
+        self.email = email
+        self.broj_mobitela = broj_mobitela
+
+    def ispisi_podatke(self):
+        return (
+            f"Ime: {self.ime}\n"
+            f"Prezime: {self.prezime}\n"
+            f"E-mail: {self.email}\n"
+            f"Broj mobitela: {self.broj_mobitela}"
+        )
+
+    def promijeni_email(self, novi_email):
+        self.email = novi_email
+        return "E-mail uspješno promijenjen."
+
+    def promijeni_broj_mobitela(self, novi_broj_mobitela):
+        self.broj_mobitela = novi_broj_mobitela
+        return "Broj mobitela uspješno promijenjen."
+
+def main():
+    # Kreiranje objekta zaposlenika
+    zaposlenik1 = Zaposlenik("Jura", "Juric", "jjuric@wonderland.com", "0952345678")
+
+    # Ispisivanje podataka o zaposleniku
+    print("Podaci o zaposleniku 1: ")
+    print(zaposlenik1.ispisi_podatke())
+
+    # Promjena e-maila i broja mobitela
+    print(zaposlenik1.promijeni_email("jjuric@wonderland.com"))
+    print(zaposlenik1.promijeni_broj_mobitela("0997654321"))
+
+    # Ispisivanje ažuriranih podataka o zaposleniku
+    print("\nAžurirani podaci o zaposleniku 1: ")
+    print(zaposlenik1.ispisi_podatke())
+
+if name == "main":
+    main() 
